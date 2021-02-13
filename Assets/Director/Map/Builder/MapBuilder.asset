@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ce2e2d23d751a4da9aba8652845415, type: 3}
+  m_Name: MapBuilder
+  m_EditorClassIdentifier: 
+  _gridWidth: 12
+  _gridHeight: 8
+  _availableTerrains:
+  - {fileID: 11400000, guid: 7cdb4c8a8fa58d74ba9d915ff5accae1, type: 2}
+  _gridBuilder: {fileID: 11400000, guid: 66bbc218032378b419bc30a5bc673100, type: 2}
+  _spawnBuilder: {fileID: 11400000, guid: d34803f568b8c6b47a2f7b289861311f, type: 2}
+  _pathBuilder: {fileID: 11400000, guid: 4476fccf1ba19d2428559dc951d08bb7, type: 2}
