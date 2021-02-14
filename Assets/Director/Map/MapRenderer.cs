@@ -9,6 +9,10 @@ public class MapRenderer : ScriptableObject
     private GameObject _castle;
     public GameObject Castle { get => _castle; set => _castle = value; }
 
+    [SerializeField]
+    private Texture2D _pathTexture;
+    public Texture2D PathTexture { get => _pathTexture; set => _pathTexture = value; }
+
     public void RenderMap(Map map, string objectName = "Map")
     {
         Debug.Log("Rendering map");
@@ -22,7 +26,12 @@ public class MapRenderer : ScriptableObject
                 tileObj.transform.parent = theMap.transform;
 
                 // Setting the texture
-                tileObj.SetTexture(tile.Terrain.Texture);
+                tileObj.SetTexture(tile.Terrain.Texture); 
+                if (tile.IsPath)
+                {
+                    Debug.Log("Rendering path");
+                    tileObj.SetTexture(PathTexture);
+                }
 
                 // Setting the spawn point flag
                 if (tile.IsBase)

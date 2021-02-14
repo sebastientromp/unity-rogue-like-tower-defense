@@ -15,4 +15,6 @@ public class Tile
     public bool IsSpawn { get; set; }
 
     public bool IsBase { get; set; }
+
+    public bool IsPath { get; set; }
 }

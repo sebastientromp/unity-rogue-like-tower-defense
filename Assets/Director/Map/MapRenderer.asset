@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: MapRenderer
   m_EditorClassIdentifier: 
   _castle: {fileID: 5615050916348032149, guid: a669b82485ad67e40a2c5a2754af0e1d, type: 3}
+  _pathTexture: {fileID: 2800000, guid: 6b0c289c98e363943b2c91c6f6db22e3, type: 3}

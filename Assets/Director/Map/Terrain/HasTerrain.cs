@@ -7,6 +7,9 @@ public class HasTerrain : MonoBehaviour
     public void SetTexture(Texture texture)
     {
         var surface = transform.Find("Surface");
-        surface.GetComponent<MeshRenderer>().sharedMaterial.SetTexture("_MainTex", texture);
+        var renderer = surface.GetComponent<MeshRenderer>();
+        var tempMaterial = new Material(renderer.sharedMaterial);
+        renderer.sharedMaterial = tempMaterial;
+        tempMaterial.SetTexture("_MainTex", texture);
     }
 }
